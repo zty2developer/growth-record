@@ -6,6 +6,14 @@ git_source(:github) do |repo_name|
 end
 
 
+# gems added by myself
+gem 'simple_form'
+gem 'bootstrap-sass'
+gem 'carrierwave'
+gem 'mini_magick'
+gem 'ckeditor'
+gem 'devise'
+
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
 # Use postgresql as the database for Active Record
