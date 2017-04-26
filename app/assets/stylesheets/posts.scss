@@ -43,3 +43,60 @@
 		}
 	}
 }
+
+// about page stylesheets
+.about {
+	font-family: "Raleway-Light";
+
+	.about-avatar {
+		width: 170px;
+		height: 170px;
+		margin: -160px auto 0 auto;
+		border-radius: 50%;
+		display: block;
+		text-align: center;
+	}
+
+	.about-name {
+		text-align: center;
+		color: #3c4858;
+		font-weight: 800;
+		text-decoration: none;
+		font-size: 30px;
+		margin-top: 30px;
+	}
+
+	.about-profession {
+		text-align: center;
+		color: #3c4858;
+		font-size: 16px;
+		margin-top: 10px;
+		font-weight: bold;
+	}
+
+	.about-contact_list {
+		display: block;
+		text-align: center;
+		list-style: none;
+		font-size: 16px;
+		margin: 20px auto 0 auto;
+		width: 200px;
+		padding: 0;
+		
+		.about-contact_wrapper {
+			display: inline-block;
+			padding: 0 15px;
+		}
+	}
+
+	.about-greeting {
+		margin-top: 20px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+
+	.about-first_para, .about-second_para, .about-third_para, .about-inscription {
+		font-size: 16px;
+		line-height: 30px;
+	}
+}
