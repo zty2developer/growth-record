@@ -2,7 +2,9 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(".blog-category_link").click ->
-  $(this).addClass "category_active"
-  $(this).parent().siblings().children().removeClass "category_active"
+$(document).ready ->
+  $(".blog-category_link").bind 'click', ->
+    $(this).addClass "category_active"
+    $(this).parent().siblings().children().removeClass "category_active"
+    return
   return
