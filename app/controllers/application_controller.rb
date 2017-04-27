@@ -9,8 +9,6 @@ class ApplicationController < ActionController::Base
     devise_parameter_sanitizer.permit :sign_up, keys: added_attrs
   end
 
-	private
-
 	def get_new_feedback
 		@feedback = Feedback.new
 	end

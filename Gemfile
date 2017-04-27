@@ -15,6 +15,7 @@ gem 'ckeditor'
 gem 'devise'
 gem 'font-awesome-rails'
 gem 'kaminari'
+gem 'activeadmin'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'
