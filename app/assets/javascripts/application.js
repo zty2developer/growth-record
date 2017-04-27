@@ -16,4 +16,5 @@
 //= require bootstrap
 //= require bootstrap-sprockets
 //= require ckeditor/init
+//= require blogs
 //= require_tree .

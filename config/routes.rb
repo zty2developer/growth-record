@@ -4,6 +4,7 @@ Rails.application.routes.draw do
 	get '/about' => 'posts#about'
 	get '/contact' => 'posts#contact'
 	get '/blog' => 'blogs#index'
+	get '/category' => 'blogs#category'
 	post '/feedbacks' => 'feedbacks#create'
 
   resources :posts
