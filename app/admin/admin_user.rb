@@ -1,9 +1,11 @@
 ActiveAdmin.register AdminUser do
   permit_params :email, :password, :password_confirmation
 
+	actions :all, except: [:show, :destroy]
+	menu label: "AdminUsers", priority: 4
   index do
     selectable_column
-    id_column
+    # id_column
     column :email
     column :current_sign_in_at
     column :sign_in_count

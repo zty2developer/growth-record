@@ -33,7 +33,6 @@
   height: 400px;
   background-image: url(coding.jpg);
   color: white;
-	font-family: "Raleway-Light";
   
   .navbar-content {
     width: 66.66666666%;
@@ -46,6 +45,7 @@
 				float: left;
 				font-size: 18px;
 				margin: 39px 0 0 0;
+				font-weight: bold;
 			}
 
 			.navbar-links_list {
@@ -72,6 +72,7 @@
   }
 
 	.navbar-wisdom {
+		font-family: "Raleway-Light";
 		font-size: 30px;
 		font-weight: bold;
 		margin: 70px auto;

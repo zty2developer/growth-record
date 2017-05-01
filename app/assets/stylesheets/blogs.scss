@@ -3,13 +3,13 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 .blog {
-	font-family: "Raleway-Bold";
 
 	.blog-category_list_wrapper {
 	  text-align: center;
 		color: #3c4858;
 
 		.blog-category_list {
+			font-family: "Raleway-Bold";
 			display: block;
 			list-style: none;
 			font-size: 12px;
@@ -47,6 +47,7 @@
 
 		.blog-post {
 			display: inline-block;
+			margin-top: 30px;
 
 			.blog-category_background {
 				width: 100%;
@@ -59,13 +60,15 @@
 				margin: 20px 0 0 0;
 				padding-left: 5px;
 				color: #337ab7;
+				font-family: "Raleway-Bold";
 			}
 
 			.blog-post_title {
 				margin: 15px 0 0 0;
 				padding-left: 5px;
 				font-size: 16px;
-				font-family: "Raleway-Bold";
+				line-height: 25px;
+				font-weight: bold;
 
 				.blog-post_title_link {
 					text-decoration: none;
@@ -77,11 +80,14 @@
 			}
 
 			.blog-post_body {
+				font-weight: 100;
 				margin: 15px 0 0 0;
 				padding-left: 5px;
-				font-family: "Raleway-Light";
 				word-break: break-all;
+				height: 150px;
+				overflow: hidden;
 				line-height: 30px;
+				color: #4f6878;
 			}
 		}
 	}

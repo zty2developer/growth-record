@@ -2,7 +2,7 @@
 # All this logic will automatically be available in application.js.
 # You can use CoffeeScript in this file: http://coffeescript.org/
 
-$(document).ready ->
+$(document).ready 'turbolinks:load', ->
   $(".blog-category_link").bind 'click', ->
     $(this).addClass "category_active"
     $(this).parent().siblings().children().removeClass "category_active"

@@ -12,4 +12,33 @@ ActiveAdmin.register Post do
 		permitted
 	end
 
+	actions :all, except: [:show]
+	menu label: "Posts", priority: 1
+
+	# configure index section
+	index do
+    selectable_column
+		column :title
+		column :body do |post|
+			post.body.truncate(300)
+		end
+		column "Released", :created_at
+		column :category
+		actions
+	end
+
+	form do |f|
+		inputs 'Details', id: "custom_post_detail" do
+			li "Created at #{f.object.created_at}" unless f.object.new_record?
+			input :category
+			input :title
+			input :body, label: "Post Content", input_html: { id: "text-input", rows: 30, oninput: "this.editor.update()"}
+		end
+		div id: "preview" do
+		end
+
+		para "Press cancel to return to the list without saving."
+		actions
+	end
+
 end

@@ -2,20 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+// post index page stylesheet
 .post-content_wrapper {
 	height: 350px;
 	margin: 0 0 20px 0;
 	border-radius: 5px;
 	box-shadow: 5px 5px 5px #888888;
 	color: white;
-	font-family: "Raleway-Light";
 
 	.post-basic_info {
 		margin: 50px auto 0 auto;
 		width: 75%;
 
+	  .post-category {
+			font-weight: bold;
+		}
+
 		.post-content_title {
 			margin: 15px auto;
+			font-weight: bold;
+		}
+
+		.post-created_at {
 			font-weight: bold;
 		}
 	}
@@ -23,10 +31,12 @@
 	.post-content_charactar {
 		width: 75%;
 		margin: 15px auto 0 auto;
+		color: #bbb;
 	}
 
 	.post-content_readmore {
 		height: 40px;
+		font-family: "Raleway-Light";
 		margin: 40px auto 0 auto;
 
 		.post-content_readmore_link {
@@ -98,5 +108,25 @@
 	.about-first_para, .about-second_para, .about-third_para, .about-inscription {
 		font-size: 16px;
 		line-height: 30px;
+	}
+}
+
+// post show page stylesheet
+.post_detail {
+	color: #3c4858;
+	
+	.post_detail-title {
+		font-weight: bold;
+	}
+
+	.post_detail-created_at {
+		margin-top: 20px;
+		font-size: 16px;
+		font-weight: bold;
+	}
+
+	.post_detail-content {
+		margin-top: 50px;
+		font-size: 14px;
 	}
 }

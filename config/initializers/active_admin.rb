@@ -14,8 +14,7 @@ ActiveAdmin.setup do |config|
   # Set an optional image to be displayed for the header
   # instead of a string (overrides :site_title)
   #
-  # Note: Aim for an image that's 21px high so it fits in the header.
-  #
+  # Note: Aim for an image that's 21px high so it fits in the header.  #
   # config.site_title_image = "logo.png"
 
   # == Default Namespace
@@ -193,13 +192,13 @@ ActiveAdmin.setup do |config|
   # and feel.
   #
   # To load a stylesheet:
-  #   config.register_stylesheet 'my_stylesheet.css'
+	# config.register_stylesheet 'bootstrap'
   #
   # You can provide an options hash for more control, which is passed along to stylesheet_link_tag():
   #   config.register_stylesheet 'my_print_stylesheet.css', media: :print
   #
   # To load a javascript file:
-  #   config.register_javascript 'my_javascript.js'
+	config.register_javascript 'showdown.min.js'
 
   # == CSV options
   #
@@ -256,7 +255,7 @@ ActiveAdmin.setup do |config|
   # Pagination is enabled by default for all resources.
   # You can control the default per page count for all resources here.
   #
-  # config.default_per_page = 30
+  config.default_per_page = 10
   #
   # You can control the max per page count too.
   #

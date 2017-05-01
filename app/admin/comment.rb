@@ -12,4 +12,15 @@ ActiveAdmin.register Comment do
 		permitted
 	end
 
+	menu label: "Comments", priority: 5
+	actions :all, except: [:show]
+
+	index do
+		selectable_column
+		column :commentor_name
+		column :commentor_account
+		column :content
+		column "Commented At", :created_at
+	end
+
 end
