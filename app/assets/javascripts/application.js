@@ -17,4 +17,5 @@
 //= require bootstrap-sprockets
 //= require ckeditor/init
 //= require blogs
+//= require showdown.min
 //= require_tree .

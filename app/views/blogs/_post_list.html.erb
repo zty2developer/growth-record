@@ -2,8 +2,8 @@
 	<div class="blog-post col-xs-4">
 	<a href="/posts/<%= post.id %>"><%= image_tag "#{post.category.background.url}", class: "blog-category_background" %></a>
 	<p class="blog-category_name"><%= post.category.name %></p>
-	<p class="blog-post_title"><%= link_to "#{post.title}", post_path(post), class: "blog-post_title_link" %></p>
-	<p class="blog-post_body"><%= post.body.truncate(200) %></p>
+	<p class="blog-post_title"><%= link_to "#{post.title.truncate(30)}", post_path(post), class: "blog-post_title_link" %></p>
+	<p class="blog-post_body"><%= post.body.truncate(300) %></p>
 </div>
 <% end %>
 <%= paginate @posts %>

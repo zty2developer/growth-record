@@ -9,12 +9,16 @@ end
 # gems added by myself
 gem 'simple_form'
 gem 'bootstrap-sass'
+gem 'active_bootstrap_skin'
 gem 'carrierwave'
 gem 'mini_magick'
 gem 'ckeditor'
 gem 'devise'
 gem 'font-awesome-rails'
 gem 'kaminari'
+gem 'activeadmin'
+gem 'redcarpet'
+gem 'coderay'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.0.1'

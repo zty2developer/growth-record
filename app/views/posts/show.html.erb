@@ -1,5 +1,5 @@
-<div class="col-sm-11 col-xs-12 blog-content">
-  <h2 class="text-center"><%= @post.title %></h2>
-  <h5 class="text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
-  <div><%= raw @post.body %></div>
+<div class="col-xs-6 col-xs-offset-3 post_detail blog-content">
+  <h2 class="post_detail-title text-center"><%= @post.title %></h2>
+  <h5 class="post_detail-created_at text-center"><%= @post.created_at.strftime('%b %d, %Y') %></h5>
+	<div class="post_detail-content col-xs-12"><%= markdown(@post.body) %></div>
 </div>
