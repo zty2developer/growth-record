@@ -7,7 +7,7 @@ ActiveAdmin.register Category do
 # or
 #
 	permit_params do
-		permitted = [:name]
+		permitted = [:name, :background]
 		# permitted << :other if params[:action] == 'create' && current_user.admin?
 		permitted
 	end

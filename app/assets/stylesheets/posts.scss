@@ -3,53 +3,57 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 // post index page stylesheet
-.post-content_wrapper {
-	height: 350px;
-	margin: 0 0 20px 0;
-	border-radius: 5px;
-	box-shadow: 5px 5px 5px #888888;
-	color: white;
+.post-content {
+	margin-top: 40px;
 
-	.post-basic_info {
-		margin: 50px auto 0 auto;
-		width: 75%;
+	.post-content_wrapper {
+		height: 350px;
+		margin: 20px 0 20px 0;
+		border-radius: 5px;
+		box-shadow: 5px 5px 5px #888888;
+		color: white;
 
-	  .post-category {
-			font-weight: bold;
+		.post-basic_info {
+			margin: 50px auto 0 auto;
+			width: 75%;
+
+			.post-category {
+				font-weight: bold;
+			}
+
+			.post-content_title {
+				margin: 15px auto;
+				font-weight: bold;
+			}
+
+			.post-created_at {
+				font-weight: bold;
+			}
 		}
 
-		.post-content_title {
-			margin: 15px auto;
-			font-weight: bold;
+		.post-content_charactar {
+			width: 75%;
+			margin: 15px auto 0 auto;
+			color: #bbb;
 		}
 
-		.post-created_at {
-			font-weight: bold;
-		}
-	}
+		.post-content_readmore {
+			height: 40px;
+			font-family: "Raleway-Light";
+			margin: 40px auto 0 auto;
 
-	.post-content_charactar {
-		width: 75%;
-		margin: 15px auto 0 auto;
-		color: #bbb;
-	}
+			.post-content_readmore_link {
+				font-size: 14px;
+				width: 100px;
+				height: 17px;
+				padding: 12px 30px;
+				border-radius: 30px;
+				color: white;
+				background-color: #ff9800;
+				text-decoration: none;
 
-	.post-content_readmore {
-		height: 40px;
-		font-family: "Raleway-Light";
-		margin: 40px auto 0 auto;
-
-		.post-content_readmore_link {
-			font-size: 14px;
-			width: 100px;
-			height: 17px;
-			padding: 12px 30px;
-			border-radius: 30px;
-			color: white;
-			background-color: #ff9800;
-			text-decoration: none;
-
-			&:visited { color: white; }
+				&:visited { color: white; }
+			}
 		}
 	}
 }
@@ -61,7 +65,7 @@
 	.about-avatar {
 		width: 170px;
 		height: 170px;
-		margin: -160px auto 0 auto;
+		margin: -110px auto 0 auto;
 		border-radius: 50%;
 		display: block;
 		text-align: center;
@@ -114,6 +118,7 @@
 // post show page stylesheet
 .post_detail {
 	color: #3c4858;
+	margin-top: 50px;
 	
 	.post_detail-title {
 		font-weight: bold;

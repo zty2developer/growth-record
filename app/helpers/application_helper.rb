@@ -6,6 +6,8 @@ module ApplicationHelper
 			fenced_code_blocks: true,
 			no_intra_emphasis: true,
 			hard_wrap: true,
+			disable_indented_code_blocks: true,
+			lax_spacing: true,
 			strikethrough: true
 		}
 		language ||= :ruby
@@ -14,8 +16,8 @@ module ApplicationHelper
 	end
 
 	class HTMLWithCodeRay < Redcarpet::Render::HTML
-		def block_code(code, language)
-			CodeRay.scan(code, language).div(:tab_width => 2)
+		def block_code(code, language="ruby")
+			CodeRay.scan(code, language="ruby").div(:tab_width => 2)
 		end
 	end
 end
