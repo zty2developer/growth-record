@@ -28,9 +28,9 @@ If you have not installed rails or ruby, check this post to learn how to set up 
 > https://gorails.com/setup/ubuntu/14.04
 
 ### Installing
-There is no extra things to do, so the installatin is complete. Just run command ```rails s``` to start your server and visit [](localhost:3000)
+There is no extra things to do, so the installatin is complete. Just run command ```rails s``` to start your server and visit <localhost:3000>
 
-This web application's administration was built by [activeadmin](https://github.com/activeadmin/activeadmin), so if you want to access website administration, visit [](localhost:3000/admin), the email and password are
+This web application's administration was built by [activeadmin](https://github.com/activeadmin/activeadmin), so if you want to access website administration, visit <localhost:3000/admin>, the email and password are
 ```
 admin@example.com
 password
