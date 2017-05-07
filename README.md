@@ -30,19 +30,19 @@ If you have not installed rails or ruby, check this post to learn how to set up 
 ### Installing
 There is no extra things to do, so the installatin is complete. Just run command ```rails s``` to start your server and visit localhost:3000
 
-This web application's administration was built by !activeadmin[https://github.com/activeadmin/activeadmin], so if you want to access website administration, visit !localhost:3000/admin, the email and password are
+This web application's administration was built by [activeadmin](https://github.com/activeadmin/activeadmin), so if you want to access website administration, visit [localhost:3000/admin](localhost:3000/admin), the email and password are
 ```
 admin@example.com
 password
 ```
 
 ## Running the tests
-The Growth Record use !rspec-rails[https://github.com/rspec/rspec-rails] gem to test the whole application, use rspec command to run your specs
+The Growth Record use [rspec-rail](https://github.com/rspec/rspec-rails) gem to test the whole application, use rspec command to run your specs
 ```
 bundle exec rspec
 ```
 
-Other test related dependency gem are FactoryGirl, Capybara, Faker, Database_cleaner, Guard-Rspec, Launchy.
+Other test related dependency gem are [FactoryGirl](https://github.com/thoughtbot/factory_girl), [Capybara](https://github.com/teamcapybara/capybara), [Faker](https://github.com/stympy/faker), [Database_cleaner](https://github.com/DatabaseCleaner/database_cleaner), [Guard-Rspec](https://github.com/guard/guard-rspec).
 
 ## Deployment
 Deploying the app on ubuntu 14.04 with Capistrano, Nginx and Puma.
