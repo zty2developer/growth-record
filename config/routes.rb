@@ -10,6 +10,9 @@ Rails.application.routes.draw do
 	post '/feedbacks' => 'feedbacks#create'
 
   resources :posts
+	resources :categories
+	resources :feedbacks
+	resources :comments
 
   devise_for :users
 

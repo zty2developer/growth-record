@@ -62,7 +62,7 @@ RSpec.describe PostsController, :type => :controller do
 
 		context 'valid attributes' do
 			it 'located the requestes @post' do
-				put :update, id: @post, post: attributes_for(:post, cateogory_id: FactoryGirl.create(:category).id)
+				put :update, id: @post, post: attributes_for(:post, category_id: FactoryGirl.create(:category).id)
 				expect(assigns(:post)).to eq(@post)
 			end
 
@@ -107,8 +107,6 @@ RSpec.describe PostsController, :type => :controller do
 		end
 
 		it 'deletes the post' do
-			Rails.logger.debug '111111111111111111'
-			Rails.logger.debug @post.attributes
 			expect {
 				delete :destroy, id: @post
 			}.to change(Post, :count).by(-1)
