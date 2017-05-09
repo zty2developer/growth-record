@@ -83,3 +83,4 @@ production:
   database: growth-record_production
   username: deploy
   password: 123456
+  host: localhost
