@@ -341,8 +341,8 @@ DEPENDENCIES
   binding_of_caller
   bootstrap-sass
   byebug
-  capistrano
-  capistrano-bundler
+  capistrano (~> 3.6)
+  capistrano-bundler (~> 1.2)
   capistrano-rails
   capistrano-rvm
   capistrano3-puma
