@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: growth-record_production
-  username: postgres
+  username: deploy
   password: 123456
