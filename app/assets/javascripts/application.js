@@ -15,7 +15,6 @@
 //= require turbolinks
 //= require bootstrap
 //= require bootstrap-sprockets
-//= require ckeditor/init
 //= require blogs
 //= require posts
 //= require showdown.min
