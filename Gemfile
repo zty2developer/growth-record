@@ -54,6 +54,17 @@ group :development, :test do
   gem 'byebug', platform: :mri
 	gem 'better_errors'
 	gem 'binding_of_caller'
+	gem 'rspec-rails', '~> 3.5'
+	gem 'database_cleaner'
+end
+
+group :test do
+	gem 'factory_girl_rails', '~> 4.0'
+	gem 'capybara'
+	gem 'guard-rspec'
+	gem 'launchy'
+	gem 'faker'
+	gem 'rails-controller-testing'
 end
 
 group :development do

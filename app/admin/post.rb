@@ -7,7 +7,7 @@ ActiveAdmin.register Post do
 # or
 #
 	permit_params do
-		permitted = [:title, :body, :category_id]
+		permitted = [:title, :summary, :body, :category_id]
 		# permitted << :other if params[:action] == 'create' && current_user.admin?
 		permitted
 	end
@@ -19,8 +19,8 @@ ActiveAdmin.register Post do
 	index do
     selectable_column
 		column :title
-		column :body do |post|
-			post.body.truncate(300)
+		column :summary do |post|
+			post.summary.truncate(300)
 		end
 		column "Released", :created_at
 		column :category
@@ -32,6 +32,7 @@ ActiveAdmin.register Post do
 			li "Created at #{f.object.created_at}" unless f.object.new_record?
 			input :category
 			input :title
+			input :summary, input_html: { rows: 10 }
 			input :body, label: "Post Content", input_html: { id: "text-input", rows: 30, oninput: "this.editor.update()"}
 		end
 		div id: "preview" do
