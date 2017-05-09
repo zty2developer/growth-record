@@ -81,5 +81,5 @@ test:
 production:
   <<: *default
   database: growth-record_production
-  username: growth-record
-  password: <%= ENV['GROWTH-RECORD_DATABASE_PASSWORD'] %>
+  username: postgres
+  password: 123456
