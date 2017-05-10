@@ -18,17 +18,6 @@
 @import "blogs";
 
 
-@font-face { font-family: "Raleway-Light";
-	src: asset_url('fonts/Raleway-Light.ttf') format("truetype");
-}
-@font-face {
-	font-family: "Raleway-Regular";
-	src: asset_url('fonts/Raleway-Regular.ttf') format("truetype");
-}
-@font-face {
-	font-family: "Raleway-Bold";
-	src: asset_url('fonts/Raleway-Bold.ttf') format("truetype");
-}
 .navbar {
   height: 400px;
   background-image: asset_url('coding.jpg');
@@ -72,7 +61,6 @@
   }
 
 	.navbar-wisdom {
-		font-family: "Raleway-Light";
 		font-size: 30px;
 		font-weight: bold;
 		margin: 70px auto;
@@ -105,13 +93,11 @@
 		text-decoration: none;
 		font-weight: 700;
 		font-size: 2.6em;
-		font-family: "Raleway-Light";
 	}
 
 	.footer-content {
 		color: #999;
 		font-size: 16px;
-		font-family: "Raleway-Light";
 	}
 
 	.new_feedback {
