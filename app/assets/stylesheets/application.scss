@@ -16,18 +16,8 @@
 @import "font-awesome";
 @import "posts";
 @import "blogs";
+@import "/layout/fonts";
 
-@font-face { font-family: "Raleway-Light";
-	src: url(/assets/Raleway-Light.ttf) format("truetype");
-}
-@font-face {
-	font-family: "Raleway-Regular";
-	src: url(/assets/Raleway-Regular.ttf) format("truetype");
-}
-@font-face {
-	font-family: "Raleway-Bold";
-	src: url(/assets/Raleway-Bold.ttf) format("truetype");
-}
 
 .navbar {
   height: 400px;
